@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Mobile View */
+  /* Mobile View */
+@media only screen and (max-width: 600px) {
+  body {
+    background: url('./2.2.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .container {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 100px;
+      }
+
+  .logo {
+    padding-top: 50px; /* Adjust the padding for the logo */
+  }
+
+
+  .form-box {
+        margin: auto;
+        width: 500px;
+        background-color: red;
+        padding: 10px;
+        opacity: 0.8;
+        border-radius: 10px;
+      }
+
+
+      /* Your form element styles */
+      .form-box input,
+      .form-box select {
+        /* Your styles */
+      }
+
+      .form-box img {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
+      }
+
+      .lable {
+        font-size: x-large;
+        font-weight: bolder;
+        color: aliceblue;
+        padding-bottom: 20px;
+      }
+
+      .input {
+        padding: 10px;
+      }
+
+      .inside {
+        font-size: x-large;
+        border: none;
+      }
+
+      .text {
+        font-size: xx-large;
+        font-weight: bolder;
+        color: aliceblue;
+      }
+
+      .text-center {
+        text-align: center;
+        padding-bottom: 10px;
+        margin: 10px;
+        border-radius: 30px;
+
+      }
+
+      .submit-button {
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .submit-button:hover {
+        background-color: red;
+        color: white;
+      }
+
+      .submit-button[disabled] {
+        cursor: not-allowed;
+      }
+
+      .submis {
+        font-size: xx-large;
+      }
+
+      .topic {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+}
+
+    /* Desktop View */
+    @media only screen and (min-width: 601px) {
+      body {
+        background: url('./1.1.jpg') no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      .container {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 100px;
+      }
+
+      .logo {
+        /* Your logo styles */
+      }
+
+      .form-box {
+        margin: auto;
+        width: 60%;
+        background-color: red;
+        padding: 10px;
+        opacity: 0.8;
+        border-radius: 10px;
+      }
+
+
+      /* Your form element styles */
+      .form-box input,
+      .form-box select {
+        /* Your styles */
+      }
+
+      .form-box img {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
+      }
+
+      .lable {
+        font-size: x-large;
+        font-weight: bolder;
+        color: aliceblue;
+        padding-bottom: 20px;
+      }
+
+      .input {
+        padding: 10px;
+      }
+
+      .inside {
+        font-size: x-large;
+        border: none;
+      }
+
+      .text {
+        font-size: xx-large;
+        font-weight: bolder;
+        color: aliceblue;
+      }
+
+      .text-center {
+        text-align: center;
+        padding-bottom: 10px;
+        margin: 10px;
+        border-radius: 30px;
+
+      }
+
+      .submit-button {
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .submit-button:hover {
+        background-color: red;
+        color: white;
+      }
+
+      .submit-button[disabled] {
+        cursor: not-allowed;
+      }
+
+      .submis {
+        font-size: xx-large;
+      }
+
+      .topic {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="./q1.png" alt="Image 1">
+    </div>
+    <div class="form-box">
+      <form>
+        <div class="topic">
+          <label class="text" for="mobile">වැඩි විස්තර දැනගැනීම සඳහා පහත තොරතුරු ලබා දෙන්න</label>
+        </div>
+
+
+
+        <label class="lable" for="mobile">Mobile Number</label>
+        <div class="input">
+          <input class="inside" type="tel" placeholder="Mobile">
+        </div>
+        <label class="lable" for="gender">Name</label>
+        <div class="input">
+          <input class="inside" type="text" placeholder="Name">
+        </div>
+        <div class="input">
+          <div>
+            <label class="lable" for="gender">Gender</label>
+          </div>
+          <div class="topic">
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+          </div>
+
+        </div>
+
+        <div class="text-center">
+          <button type="submit" disabled=""
+            class="submit-button bg-white text-red-500 px-6 py-2 rounded-full opacity-50 cursor-not-allowed submits"
+            style="
+            font-size: xx-large;
+        ">
+            Submit
+          </button>
+        </div>
+
+      </form>
+      <!-- <img src="image2.jpg" alt="Image 2"> -->
+    </div>
+  </div>
+</body>
+
+</html>
